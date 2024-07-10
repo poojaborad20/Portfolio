@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us-Pooja</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left">
+            <img src="./Images/photo.jpeg" alt="logo" class="logo">
+            <a href="/">Pooja's Portfolio</a>
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="/#index">Home</a></li>
+              <li><a href="/#about">About</a></li>
+              <li><a href="/#contact.html">Contact Me</a></li>
+              <li><button class="btn">Download Resume</button></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <section class="text-gray-600 body-font" id="about">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white" data-aos="fade-up">About Me</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="./Images/telecaller.png" alt="content">
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Telecalling</h2>
+                <p class="leading-relaxed text-base">Contacting current and potential students to inform them regarding the college service. Answering all queries and questions regarding the college and Addmission.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="./Images/textile.png" alt="content">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Textile</h2>
+                <p class="leading-relaxed text-base">Presenting fabric and garments ranges at meetings and trade fairs. Increasing and maintaining sales. Sales agents also provide information to customers regarding.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="./Images/recep.jpg" alt="content">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Receptionist</h2>
+                <p class="leading-relaxed text-base">Maintaining the reception area; Keeping office records up to date; Performing various other clerical tasks, including faxing, transcribing and filing.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="./Images/react-about.jpg" alt="content">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">React Internship</h2>
+                <p class="leading-relaxed text-base">Worked on the development of various web applications using React and Implemented responsive designs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Pooja's Portfolio</h3>
+            <p>Passionate Developer eager to build impactful web applications.</p>
+          </div>
+          <div class="footer-section links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/#index.html">Home</a></li>
+              <li><a href="/#about.html">About</a></li>
+              <li><a href="/#skills">Skills</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <div class="footer-section social">
+            <h4>Follow Me</h4>
+            <ul>
+              <li><a href="https://github.com/poojaborad20" target="_blank">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Pooja's Portfolio. All rights reserved.</p>
+        </div>
+      </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+       AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        const aboutTexts = document.querySelectorAll('.about-text');
+
+        const revealOnScroll = () => {
+          const scrollPosition = window.pageYOffset + window.innerHeight;
+          aboutTexts.forEach(text => {
+            if (text.offsetTop < scrollPosition) {
+              text.classList.add('show');
+            }
+          });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); 
+      });
+
+      </script>
+      
+</body>
+</html>
